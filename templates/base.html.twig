@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{{title}}</title>
+        {% block stylesheets %}
+            <link href="{{ 'style.css' }}" rel="stylesheet"/>
+            <img src="{{ 'logo.png'}}" rel="alt"/>
+        {% endblock %}
+    </head>
+
+    <body>
+    {% include "header.html.twig" %}
+        {% block body %}{% endblock %}
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

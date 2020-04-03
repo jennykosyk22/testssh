@@ -1,0 +1,8 @@
+index:
+    path: /index
+    controller: App\Controller\OnePageController::index
+
+
+contact_path:
+    path: /contact_path
+    controller: App\Controller\OnePageController::contact

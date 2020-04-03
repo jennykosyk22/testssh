@@ -1,0 +1,10 @@
+{% block header %}
+    <div class="nav">
+        <ul>
+            <li {% if title=='index' %} class='gras'{% endif %}><a href= "{{ path('index') }}">Home</a></li>
+            
+            <li {% if app.request.attributes.get('_route')=='contact_path' %} class="gras" {% endif %}><a href="{{ path('contact_path')}} ">Contact</a></li>
+            
+        </ul>
+    </div>
+{% endblock %}
